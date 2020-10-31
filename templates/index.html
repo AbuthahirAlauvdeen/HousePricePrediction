@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<body style = "background: rgb(201, 206, 199)">
+ <h1> House Price Prediction</h1>
+
+ <form action="/predict" method="POST"> 
+ <input type = "text" name = "BHK_No" placeholder = "# number of BHKs"/>
+ <input type = "text" name = "BHK_OR_RK" placeholder = "Type of property 1 or 0"/>
+ <input type = "text" name = "Ready_To_Move" placeholder = "Property is ready to occupy 1 or 0"/>
+ <input type = "text" name = "RERA_Approved" placeholder = "RERA approved property or not 1 or 0"/>
+ <input type = "text" name = "Resale" placeholder = "Resale status 1 or 0"/>
+ <input type = "text" name = "Square_Feet" placeholder = "Square feet in feets"/>
+ <input type = "text" name = "Under_Construction" placeholder = "Under constrution or not 1 or 0"/>
+ <input type = "text" name = "Ad_Posted_By" placeholder = "Listed by 0 for builder or 1 for Dealer or 2 for Owner "/>
+  <button type = "submit" name  = "predict">Predict Price </button>
+</form>
+
+</body>
+
+
+</head>
+
+{{prediction_text}}
+
+
+
+</html>
